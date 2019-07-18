@@ -1,16 +1,17 @@
 <?php
 
-namespace Statamic\Addons\HoneyBooBoo;
+namespace Statamic\Addons\AllTheThings;
 
-use Statamic\Addons\Suggest\Modes\AbstractMode;
-use Statamic\API\Entry;
 use Statamic\API\Page;
+use Statamic\API\Entry;
+use Illuminate\Support\Str;
+use Statamic\Addons\Suggest\Modes\AbstractMode;
 
 /**
  * A combination of pages and collection suggest modes.
  * Code mostly stolen from core.
  */
-class AllTheThingsMode extends AbstractMode
+class AllTheThingsSuggestMode extends AbstractMode
 {
     public function suggestions()
     {
